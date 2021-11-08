@@ -18,7 +18,6 @@ public final class adress {
     private String cep;
     private String uf;
     private String pontoReferencia;
-    private String hello;
     
     public adress(){
         
