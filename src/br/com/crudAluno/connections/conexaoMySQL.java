@@ -2,6 +2,8 @@
 package br.com.crudAluno.connections;
 
 import java.sql.Connection;
+import java.sql.DriverManager;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -70,9 +72,15 @@ public class conexaoMySQL {
     
     public Connection conectar(){
         try{
-            Class.forName("com.mysql.jdbc.Driver").newInstance();
-        } catch(Exception e) {
             
+            String url = "";
+            Class.forName("com.mysql.jdbc.Driver").newInstance();
+            url = "jdbc:mysql://" + getServidor() + "/" + getNomeDoBanco();
+            
+            setC((Connection) DriverManager.getConnection(url, getUsuario(), getSenha()));
+            
+        } catch(Exception e) {
+            JOptionPane.showMessageDialog(null, e.getMessage());
         }
         
         return getC();
