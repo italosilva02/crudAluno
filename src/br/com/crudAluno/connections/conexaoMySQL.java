@@ -70,7 +70,7 @@ public class conexaoMySQL {
     
     public Connection conectar(){
         try{
-            
+            Class.forName("com.mysql.jdbc.Driver").newInstance();
         } catch(Exception e) {
             
         }
