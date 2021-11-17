@@ -16,6 +16,7 @@ public class jfmTurma extends javax.swing.JFrame {
      */
     public jfmTurma() {
         initComponents();
+        setExtendedState(MAXIMIZED_BOTH);
     }
 
     /**
@@ -65,7 +66,7 @@ public class jfmTurma extends javax.swing.JFrame {
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/image-from-rawpixel-id-3814897-jpeg.jpg"))); // NOI18N
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(1, -4, 1200, 800);
+        jLabel2.setBounds(1, -4, 1110, 800);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

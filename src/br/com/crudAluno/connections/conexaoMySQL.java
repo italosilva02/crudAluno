@@ -13,10 +13,10 @@ public class conexaoMySQL {
     
     private Connection c = null;
     
-    private String servidor = "";
-    private String nomeDoBanco = "";
-    private String usuario = "";
-    private String senha = "";
+    private String servidor = ""; // url da conexão com o banco de dados
+    private String nomeDoBanco = ""; // Nome do nosso banco
+    private String usuario = ""; // Usuário do banco de dados
+    private String senha = ""; //  senha do usuário
     
     public conexaoMySQL (){
         
